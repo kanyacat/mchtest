@@ -1,8 +1,14 @@
-import React from 'react';
+import React from 'react'
 import styles from './Main.module.scss'
 
 const Main = () => {
-		return <div className={styles.root}>meow!</div>
+	return (
+		<div className={styles.root}>
+			<button>
+				<p>поиск</p>
+			</button>
+		</div>
+	)
 }
 
-export default Main;
+export default Main
