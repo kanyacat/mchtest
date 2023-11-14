@@ -2,13 +2,13 @@
 
 :root {
 	font-family: DM Sans, sans-serif;
-	font-size: 40px;
+	font-size: 16px;
 	font-weight: 700;
-	line-height: 52px;
-	letter-spacing: 0em;
+	line-height: 1;
+	letter-spacing: 0;
 
-	background-color: #e6d2cb;
-	color: #fff;
+	background-color: black;
+	color: #563931;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -42,7 +42,7 @@ a {
 button {
 	color: #fff;
 	font-family: DM Sans, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 700;
 	line-height: normal;
 
