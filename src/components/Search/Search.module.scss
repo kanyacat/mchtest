@@ -1,0 +1,104 @@
+.search {
+	background-color: #f9f0eb;
+	font-size: 14px;
+
+	border-radius: 5px;
+	border: 2px solid rgba(227, 177, 0, 0.55);
+
+	width: 25%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h4 {
+		margin: 15px 0 8px 0;
+	}
+
+	&Wrapper {
+		padding: 10px 20px;
+
+		background-color: #ddb09d;
+		border-radius: 10px;
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		&:last-child {
+			margin-top: 8px;
+		}
+
+		&Title {
+			margin-bottom: 4px;
+		}
+
+		input {
+			margin-bottom: 4px;
+
+			font-family: DM Sans, sans-serif;
+			font-weight: 700;
+			font-size: 14px;
+			color: #563931;
+
+			outline: none;
+		}
+
+		.input {
+			display: flex;
+			align-items: center;
+
+			margin-bottom: 4px;
+
+			input[type='checkbox'] {
+				margin: 0 4px 0 0;
+				-webkit-appearance: none;
+				appearance: none;
+
+				width: 1em;
+				height: 1em;
+
+				background: url('https://s3-alpha-sig.figma.com/img/a404/6e7a/690c026f49a6cbef205bb6c88d95212d?Expires=1701043200&Signature=InDIcpUiqXlyWU5IRcDTJ5SMBMbbVU6fnopCmJwJQyc1c-gf2DcKFF5ynoZJk1w4eb3K6meN08k63dRwBnVXmkitewtAVljaR4bXPlrydhk-9Yxo5vGG2xkU8VLn3DBJ-Fo84ROh37Z5RaJJprjEJm-nb5SrwFBSDdU3lmZl-nBqZNOZyx7aFc7N-8mzSSlXEOy-UmGqn579DxNrOWjOgUstyc-gfvhWt4qc9Bst41zYCnwYW~-GcbQ5s1RKGmviTm8YxOAzES4pXZ8-v6Z7wkV8BWFTpEVmPt0QKgp09HiQPSijEUbP-ZCeOHB0PJRqJRcLj4z~kEoNzkeNsuZxlg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')
+					center/cover no-repeat;
+				background-size: 100% 100%;
+
+				outline: none;
+				cursor: pointer;
+
+				&:checked::before {
+					content: '';
+					width: 1em;
+					height: 1em;
+
+					position: absolute;
+
+					background: url('https://s3-alpha-sig.figma.com/img/c182/0806/7366b6a4820a3032dab9adb1461cf3e5?Expires=1701043200&Signature=p-Lwy9~tQiyWpdOF2aLWr9rxWrpovCN6pAD4x0pqoJTURzJ42oIFm9I7~q4lquNm4CwbANtZUZ6ttMHs2z7nRCGqjlX~0NKfx37sU5oPTWkSiFhrxUVRgK8ZQPh1FmmGs9s5RGsZzFhU-~Fu~xWVWCG5kzZ-syiuzUCH74i4E9lJwK89wcQN5HN9zAgQw5dZTV5zem5~o3GU2CU9c1W2aCZDIxbpDHX5N0N0~F-b~ggpiIT5cNfJ85u36dR7-m3UyGYmSHBN6ZS36sV8H87VxAMnWw4bjI2cPOe1QZah371pPp-UORFcj4pLubN-GYi-nbdne2PEG6-0Xegl2082zQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')
+						center/cover no-repeat;
+					background-size: 100% 100%;
+				}
+			}
+
+			.label {
+				font-weight: 400;
+				cursor: pointer;
+			}
+		}
+	}
+
+	button {
+		margin-top: 3px;
+		padding: 3px 40px;
+		align-self: center;
+
+		p {
+			margin-bottom: 2px;
+		}
+	}
+
+	.reset {
+		margin: 10px 0;
+		padding: 3px 32px;
+	}
+}

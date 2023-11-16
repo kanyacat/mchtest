@@ -1,0 +1,53 @@
+.result {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 95%;
+	.item {
+		margin-bottom: 20px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		img {
+			border: 1px solid #563931;
+		}
+
+		&Text {
+			margin-bottom: 3px;
+		}
+
+		&Name {
+			margin-top: 5px;
+		}
+	}
+
+	.stores {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		h2 {
+			margin-bottom: 10px;
+		}
+
+		&Table {
+			width: 100%;
+
+			padding: 10px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			background-color: #ddb09d;
+			border-radius: 10px;
+
+			table {
+				width: 100%;
+			}
+		}
+	}
+}
