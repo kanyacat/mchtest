@@ -28,7 +28,7 @@ const Search = () => {
 							checked={checkedName}
 							onChange={changeCheckboxName}
 						/>
-						<label for='name' className={styles.label}>
+						<label htmlFor='name' className={styles.label}>
 							именно такое название
 						</label>
 					</div>
@@ -40,7 +40,7 @@ const Search = () => {
 							checked={checkedType}
 							onChange={changeCheckboxType}
 						/>
-						<label for='type' className={styles.label}>
+						<label htmlFor='type' className={styles.label}>
 							только один тип
 						</label>
 					</div>

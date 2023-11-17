@@ -1,9 +1,10 @@
 .result {
+	width: 100%;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
-	width: 95%;
 	.item {
 		margin-bottom: 20px;
 
@@ -21,99 +22,6 @@
 
 		&Name {
 			margin-top: 5px;
-		}
-	}
-
-	.stores {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
-		h2 {
-			margin-bottom: 10px;
-		}
-
-		&Table {
-			width: 100%;
-
-			padding: 15px 10px;
-
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-
-			background-color: #ddb09d;
-			border-radius: 10px;
-
-			.border {
-				padding: 2px;
-				border: 2px solid #563931;
-			}
-
-			table {
-				width: 100%;
-
-				border: 2px solid #563931;
-
-				border-collapse: collapse;
-
-				text-align: left;
-
-				th {
-					font-size: 18px;
-
-					i {
-						font-size: 12px;
-					}
-				}
-
-				td,
-				th {
-					padding: 5px;
-					font-weight: 700;
-
-					border-bottom: 2px solid black;
-					border-right: 2px solid black;
-
-					&:first-child {
-						width: 40%;
-					}
-
-					&:nth-child(2) {
-						width: 25%;
-					}
-
-					&:nth-child(3) {
-						text-align: center;
-						width: 13%;
-					}
-
-					&:last-child {
-						width: 23%;
-						text-align: right;
-
-						border-right: 2px solid #563931;
-					}
-				}
-
-				td {
-					font-size: 16px;
-
-					background: #e6d2cb;
-				}
-
-				.price {
-					&Num {
-						position: relative;
-						padding-right: 15px;
-						img {
-							position: absolute;
-							top: 3px;
-							right: -3px;
-						}
-					}
-				}
-			}
 		}
 	}
 }
