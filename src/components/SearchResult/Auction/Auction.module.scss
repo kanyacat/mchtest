@@ -16,6 +16,8 @@
 
 	.subtext {
 		font-weight: 400;
+		font-size: 13px;
+		line-height: 1.2;
 	}
 
 	&Auction {
@@ -30,6 +32,7 @@
 		border-radius: 10px;
 
 		.lot {
+			padding: 0 10px;
 			display: flex;
 			justify-content: space-between;
 
@@ -41,15 +44,63 @@
 			}
 
 			.left {
-				width: 80%;
+				width: 90%;
 				.item {
 					display: flex;
 					align-items: center;
+
+					img {
+						margin-right: 12px;
+						border: 1px solid #563931;
+					}
+
+					.info {
+						width: 80%;
+					}
+				}
+
+				.price {
+					margin-top: 15px;
+					margin-bottom: 10px;
+
+					font-size: 18px;
+					&Num {
+						position: relative;
+						padding-right: 15px;
+						img {
+							position: absolute;
+							top: 4px;
+							right: -3px;
+						}
+					}
+				}
+
+				.trade {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					.input {
+						margin-right: 10px;
+						max-width: 100px;
+
+						font-family: DM Sans, sans-serif;
+						font-weight: 700;
+						font-size: 16px;
+						color: #563931;
+
+						outline: none;
+					}
+
+					.btn {
+						padding: 5px 20px;
+					}
 				}
 			}
 
 			.right {
 				width: 20%;
+				font-size: 0.9em;
+				text-align: center;
 			}
 		}
 	}
