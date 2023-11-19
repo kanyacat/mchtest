@@ -1,0 +1,11 @@
+$font-stack: DM Sans, sans-serif;
+$primary-color: #563931;
+$background-color: #f9f0eb;
+$table-color: #e6d2cb;
+$base-color: #ddb09d;
+
+@mixin flex-column-center() {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

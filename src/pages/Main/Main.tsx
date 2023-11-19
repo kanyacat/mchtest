@@ -1,8 +1,12 @@
 import styles from './Main.module.scss'
 import Search from '../../components/Search/Search'
 import SearchResult from '../../components/SearchResult/SearchResult'
+import { useSelector } from 'react-redux'
+import { searchSelector } from '../../redux/search/slice'
 
 const Main = () => {
+	const searchValue = useSelector(searchSelector)
+
 	return (
 		<div className={styles.root}>
 			<div className={styles.main}>
@@ -20,7 +24,7 @@ const Main = () => {
 						alt='Карайкош Шоппер'
 					/>
 				</div>
-				<SearchResult />
+				{searchValue ? <SearchResult /> : ''}
 			</div>
 			<Search />
 		</div>

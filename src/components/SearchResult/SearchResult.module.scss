@@ -1,19 +1,17 @@
+@import './src/variables';
+
 .result {
 	width: 100%;
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex-column-center;
 
 	.item {
 		margin-bottom: 20px;
 
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		@include flex-column-center;
 
 		img {
-			border: 1px solid #563931;
+			border: 1px solid $primary-color;
 		}
 
 		&Text {
