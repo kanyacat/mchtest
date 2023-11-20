@@ -1,4 +1,5 @@
 import styles from './Stores.module.scss'
+import { Link } from 'react-router-dom'
 
 const Stores = () => {
 	return (
@@ -28,7 +29,9 @@ const Stores = () => {
 						<tbody>
 							<tr>
 								<td>Свеччик</td>
-								<td>kancat</td>
+								<td>
+									<Link to={'/profile/2342'}>kancat</Link>
+								</td>
 								<td>1</td>
 								<td className={styles.price}>
 									<span className={styles.priceNum}>
@@ -42,7 +45,9 @@ const Stores = () => {
 							</tr>
 							<tr>
 								<td>Свеччик</td>
-								<td>Military</td>
+								<td>
+									<Link to={'/profile/2342'}>Military</Link>
+								</td>
 								<td>5</td>
 								<td className={styles.price}>
 									<span className={styles.priceNum}>

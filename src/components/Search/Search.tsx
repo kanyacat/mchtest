@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react'
+import { ChangeEvent, useEffect, useState } from 'react'
 import styles from './Search.module.scss'
 import { useDispatch } from 'react-redux'
 import { setSearchValue } from '../../redux/search/slice'
@@ -32,6 +32,10 @@ const Search = () => {
 	const onChangeInput = (event: ChangeEvent<HTMLInputElement>) => {
 		setItemInputValue(event.target.value)
 	}
+
+	useEffect(() => {
+		dispatch(setSearchValue(''))
+	}, [window.location])
 
 	return (
 		<div className={styles.search}>
